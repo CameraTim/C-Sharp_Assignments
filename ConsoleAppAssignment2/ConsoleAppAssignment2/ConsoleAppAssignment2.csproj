@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E02C0DA-E3FF-45D8-9C70-4FCABCED11F3}</ProjectGuid>
+    <ProjectGuid>{2C0D3ED5-3D34-499F-94E7-5571425318AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Assignments</RootNamespace>
-    <AssemblyName>Assignments</AssemblyName>
+    <RootNamespace>ConsoleAppAssignment2</RootNamespace>
+    <AssemblyName>ConsoleAppAssignment2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Daily_Report.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
