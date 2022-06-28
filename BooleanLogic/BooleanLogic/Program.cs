@@ -5,11 +5,14 @@
         static void Main()
         {
         Console.WriteLine("What is your age?");
+        // Write age to variable and convert to number
         string age = Console.ReadLine();
         int ageNum = Convert.ToInt32(age);
         Console.WriteLine("Have you ever had a DUI?");
         string dui = Console.ReadLine();
+        // Capturing result and converting to lower case to make if statement easier
         dui = dui.ToLower();
+        // Initiating boolean variable for use in the if statement
         bool duiResult;
         if (dui == "yes" || dui == "true")
         {
@@ -24,6 +27,7 @@
         int tickets = Convert.ToInt32(way2fast);
         Console.WriteLine("Qualified?");
         bool qualityPerson;
+        // Using AND operator to confrim if all three results meet the requirements
         if (ageNum > 15 && duiResult == false && tickets <= 3)
         {
             qualityPerson = true;
@@ -34,8 +38,5 @@
         }
         Console.WriteLine(qualityPerson);
         Console.ReadLine();
-
-
-
     }
     }
