@@ -20,14 +20,15 @@ class Program
             int packH = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter the package length:");
             int packL = Convert.ToInt32(Console.ReadLine());
-            int packT = packH * packL * packW * packLbs / 100;
+            int packDim = packH + packL + packW;
             // Comparing each dimension to 50 to see if the package fits within required dimensions
-            if (packH > 50 || packL > 50 || packW > 50)
+            if (packDim > 50)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express. Have a good day.");
             }
             else
             {
+                int packT = packH * packL * packW * packLbs / 100;
                 Console.WriteLine("Your estimated total for shipping this package is: $" + packT + ".00.");
                 Console.WriteLine("Thank you!");
             }
