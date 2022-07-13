@@ -27,6 +27,10 @@ namespace Class
             // Calling the second numAdd method that requires two arguments
             int result = StatNum.numAdd(entryA, entryB);
             Console.WriteLine(entryA + " times " + entryB + " = " + result);
+            // Calling a method with an output parameter
+            int number;
+            numOb.numOut(out number);
+            Console.WriteLine("Just wanted you to know that " + number + " has been called out.");
             Console.ReadLine();
         }
     }

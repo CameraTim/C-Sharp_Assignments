@@ -14,6 +14,10 @@ namespace Class
             int num2 = num1 / 2;
             Console.WriteLine(num1 + " divided by 2 and rounded = " + num2);
         }
+        public void numOut(out int number)
+        {
+            number = 50;
+        }
     }
     // Class and method are static so they don't require instantiation
     public static class StatNum
